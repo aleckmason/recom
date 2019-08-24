@@ -1,0 +1,27 @@
+#Internal package file, do not edit.
+#Sat Aug 24 14:27:30 CST 2019
+2.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+5.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\appitem_view.xml
+5.set=ANDROID_RESOURCE
+3.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+6.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\activity_main.xml
+2.set=ANDROID_RESOURCE
+4.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+7.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-anydpi-v21\\ic_launcher_background.xml
+7.set=ANDROID_RESOURCE
+count=8
+0.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-hdpi-v4\\icon.png
+5.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+4.set=ANDROID_RESOURCE
+6.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+1.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\AndroidManifest.xml
+1.set=ANDROID_RESOURCE
+7.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+2.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_launcher_background.png
+6.set=ANDROID_RESOURCE
+0.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+3.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\recommend_view.xml
+3.set=ANDROID_RESOURCE
+1.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+4.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\resources.arsc
+0.set=ANDROID_RESOURCE

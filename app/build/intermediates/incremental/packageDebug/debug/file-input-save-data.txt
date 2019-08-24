@@ -1,0 +1,36 @@
+#Internal package file, do not edit.
+#Sat Aug 24 15:04:37 CST 2019
+2.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+5.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\appitem_view.xml
+5.set=ANDROID_RESOURCE
+3.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+6.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\resources.arsc
+2.set=DEX
+10.set=ANDROID_RESOURCE
+10.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-anydpi-v21\\ic_launcher_background.xml
+4.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+7.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\0.jar\\org\\apache\\http\\client\\version.properties
+7.set=JAVA_RESOURCE
+count=11
+0.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-hdpi-v4\\icon.png
+5.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+8.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\activity_main.xml
+4.set=ANDROID_RESOURCE
+6.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+1.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\AndroidManifest.xml
+9.set=JAVA_RESOURCE
+9.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\0.jar\\org\\apache\\http\\version.properties
+10.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+1.set=ANDROID_RESOURCE
+7.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\0.jar
+2.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
+6.set=ANDROID_RESOURCE
+0.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+8.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+3.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-xxhdpi-v4\\ic_launcher_background.png
+3.set=ANDROID_RESOURCE
+1.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
+9.base=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\0.jar
+4.file=E\:\\daka\\client\\recommend\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\recommend_view.xml
+8.set=ANDROID_RESOURCE
+0.set=ANDROID_RESOURCE
