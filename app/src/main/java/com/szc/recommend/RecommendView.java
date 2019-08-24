@@ -66,7 +66,7 @@ public class RecommendView extends LinearLayout {
             if(item.getPackageName().equals(SystemUtils.getPackageName(mContext))) {
                 continue;
             }
-
+            int a = 0;
             item.setIconUrl(Constants.ROOT_URL + item.getIconUrl());
             item.setDownloadUrl(Constants.ROOT_URL + item.getDownloadUrl());
 
