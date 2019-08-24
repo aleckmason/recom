@@ -63,8 +63,15 @@ public class RecommendView extends LinearLayout {
         mContainer = findViewById(R.id.container);
         for(int i = 0;i < data.size();i++) {
             AppItem item = data.get(i);
+            if(item.getPackageName().equals(SystemUtils.getPackageName(mContext))) {
+                continue;
+            }
+
             item.setIconUrl(Constants.ROOT_URL + item.getIconUrl());
             item.setDownloadUrl(Constants.ROOT_URL + item.getDownloadUrl());
+
+
+
             if( item.bannerList != null) {
                 for(int j = 0;j < item.bannerList.size();j++) {
                     item.getBannerList().set(j,Constants.ROOT_URL + item.getBannerList().get(j));

@@ -58,7 +58,22 @@ public class SystemUtils {
 
     public static final String DESTINATIONPATH = getSDCardPath() + "/moningcall/";
 
-
+    /**
+     * [获取应用程序版本名称信息]
+     * @param context
+     * @return 当前应用的版本名称
+     */
+    public static synchronized String getPackageName(Context context) {
+        try {
+            PackageManager packageManager = context.getPackageManager();
+            PackageInfo packageInfo = packageManager.getPackageInfo(
+                    context.getPackageName(), 0);
+            return packageInfo.packageName;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
     public static String getSDCardPath() {
         return Environment.getExternalStorageDirectory().getAbsolutePath();

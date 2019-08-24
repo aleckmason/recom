@@ -14,6 +14,9 @@ public class AppItem {
     public String downloadUrl;
     public String desc;
 
+
+
+
     public String getAppName() {
         return appName;
     }
