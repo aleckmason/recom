@@ -14,8 +14,15 @@ public class AppItem {
     public String downloadUrl;
     public String desc;
 
+    public String introUrl;
 
+    public String getIntroUrl() {
+        return introUrl;
+    }
 
+    public void setIntroUrl(String introUrl) {
+        this.introUrl = introUrl;
+    }
 
     public String getAppName() {
         return appName;

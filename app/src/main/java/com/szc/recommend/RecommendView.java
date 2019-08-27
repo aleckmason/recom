@@ -1,7 +1,12 @@
 package com.szc.recommend;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.wifi.WifiManager;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -10,6 +15,7 @@ import android.view.View;
 import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 
@@ -30,6 +36,8 @@ public class RecommendView extends LinearLayout {
     private Context mContext;
     private LinearLayout mContainer;
     private TextView mTitle;
+    private NetWorkChangReceiver mNetWorkLisntener = new NetWorkChangReceiver();
+    private boolean bLoaded = false;
     public RecommendView(Context context) {
         super(context);
         mContext = mContext;
@@ -45,24 +53,37 @@ public class RecommendView extends LinearLayout {
 
 
     private void init() {
+        LayoutInflater inflater = LayoutInflater.from(mContext);
+        inflater.inflate(R.layout.recommend_view,this);
+
+        mTitle = findViewById(R.id.title);
+        mContainer = findViewById(R.id.container);
+
+
         loadAppItems(new Callback() {
             @Override
             public void onResult(List<AppItem> data) {
                 initUI(data);
             }
         });
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(WifiManager.WIFI_STATE_CHANGED_ACTION);
+        filter.addAction(WifiManager.NETWORK_STATE_CHANGED_ACTION);
+        filter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
+        mContext.registerReceiver(mNetWorkLisntener, filter);
     }
 
     private void initUI(List<AppItem> data) {
         if(data == null) {
             return;
         }
+        bLoaded = true;
+        mContainer.removeAllViews();
         LayoutInflater inflater = LayoutInflater.from(mContext);
-        inflater.inflate(R.layout.recommend_view,this);
 
-        mContainer = findViewById(R.id.container);
         for(int i = 0;i < data.size();i++) {
-            AppItem item = data.get(i);
+            View itemView = inflater.inflate(R.layout.appitem_view,null);
+            final AppItem item = data.get(i);
             if(item.getPackageName().equals(SystemUtils.getPackageName(mContext))) {
                 continue;
             }
@@ -80,20 +101,33 @@ public class RecommendView extends LinearLayout {
 
 
 
-            View itemView = inflater.inflate(R.layout.appitem_view,null);
+
             NetRoundImageView icon = itemView.findViewById(R.id.icon);
             TextView name = itemView.findViewById(R.id.name);
             String iconUrl = item.getIconUrl();
             icon.setImageURL(item.getIconUrl());
             name.setText(item.getAppName());
 
+            itemView.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent it = new Intent(mContext,DetailActivity.class);
+                    it.putExtra("url",item.getIntroUrl());
+                    mContext.startActivity(it);
+
+                }
+            });
             mContainer.addView(itemView);
         }
     }
 
+    public void hideTitle()  {
+        mTitle.setVisibility(View.GONE);
+    }
     public void setTitle(String text) {
         mTitle.setText(text);
     }
+
     public void setTitleColor(int colorResId) {
         mTitle.setTextColor(mContext.getResources().getColor(colorResId));
     }
@@ -147,5 +181,43 @@ public class RecommendView extends LinearLayout {
 
     interface Callback {
         public void onResult(List<AppItem> data);
+    }
+
+
+    class NetWorkChangReceiver extends BroadcastReceiver {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            // 监听网络连接，包括wifi和移动数据的打开和关闭,以及连接上可用的连接都会接到监听
+            if (ConnectivityManager.CONNECTIVITY_ACTION.equals(intent.getAction())) {
+                //获取联网状态的NetworkInfo对象
+                NetworkInfo info = intent.getParcelableExtra(ConnectivityManager.EXTRA_NETWORK_INFO);
+                if (info != null) {
+                    //如果当前的网络连接成功并且网络连接可用
+                    if (NetworkInfo.State.CONNECTED == info.getState() && info.isAvailable()) {
+                        if (info.getType() == ConnectivityManager.TYPE_WIFI || info.getType() == ConnectivityManager.TYPE_MOBILE) {
+                            //  Log.i("TAG", getConnectionType(info.getType()) + "连上");
+                            if(!bLoaded) {
+                                refresh();
+                            }
+
+                        }
+                    } else {
+
+
+                    }
+                }
+            }
+        }
+    };
+
+
+    void refresh() {
+        loadAppItems(new Callback() {
+            @Override
+            public void onResult(List<AppItem> data) {
+                initUI(data);
+            }
+        });
     }
 }
