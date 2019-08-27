@@ -2,13 +2,10 @@ package com.szc.recommend;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.view.Window;
-import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 import recommend.aleck.com.recommend.R;
 
@@ -23,7 +20,7 @@ public class DetailActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_help);
+        setContentView(R.layout.activity_recommend_detail);
 
         WebView mWebView = findViewById(R.id.weibview);
         String url = getIntent().getStringExtra("url");
