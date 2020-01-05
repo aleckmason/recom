@@ -6,8 +6,10 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.net.wifi.WifiManager;
 import android.os.Handler;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -49,6 +51,7 @@ public class RecommendView extends LinearLayout {
         mContext = context;
         init();
     }
+
 
 
 
@@ -101,7 +104,6 @@ public class RecommendView extends LinearLayout {
 
 
 
-
             NetRoundImageView icon = itemView.findViewById(R.id.icon);
             TextView name = itemView.findViewById(R.id.name);
             String iconUrl = item.getIconUrl();
@@ -111,9 +113,7 @@ public class RecommendView extends LinearLayout {
             itemView.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent it = new Intent(mContext,DetailActivity.class);
-                    it.putExtra("url",item.getIntroUrl());
-                    mContext.startActivity(it);
+                    launchAppDetail(mContext,item.packageName);
 
                 }
             });
@@ -132,6 +132,19 @@ public class RecommendView extends LinearLayout {
         mTitle.setTextColor(mContext.getResources().getColor(colorResId));
     }
 
+    public static void launchAppDetail(Context context , String appPkg) {
+        try {
+            if (TextUtils.isEmpty(appPkg))
+                return;
+            Uri uri = Uri.parse("market://details?id=" + appPkg);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     private void loadAppItems(final Callback callback) {
 
 
@@ -139,14 +152,12 @@ public class RecommendView extends LinearLayout {
                 @Override
                 public void run() {
 
-
                     HttpRequester hr = new HttpRequester();
                     HashMap<String,String> params = new HashMap<>();
+                    params.put("channel",SystemUtils.getMetaData(mContext,"channel"));
                     try {
-
-
                          HttpRespons respon = hr.sendPost(Constants.GET_APP_LIST, params, null);
-
+                         System.out.println("loadAppItems result = " + respon.content);
                         final JSONObject json = new JSONObject(respon.content);
 
                         mHandler.post(new Runnable() {
