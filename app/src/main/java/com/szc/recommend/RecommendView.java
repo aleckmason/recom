@@ -40,6 +40,7 @@ public class RecommendView extends LinearLayout {
     private TextView mTitle;
     private NetWorkChangReceiver mNetWorkLisntener = new NetWorkChangReceiver();
     private boolean bLoaded = false;
+    private int mItemColor ;
     public RecommendView(Context context) {
         super(context);
         mContext = mContext;
@@ -61,7 +62,7 @@ public class RecommendView extends LinearLayout {
 
         mTitle = findViewById(R.id.title);
         mContainer = findViewById(R.id.container);
-
+        mItemColor = mContext.getResources().getColor(R.color.black);
 
         loadAppItems(new Callback() {
             @Override
@@ -109,7 +110,7 @@ public class RecommendView extends LinearLayout {
             String iconUrl = item.getIconUrl();
             icon.setImageURL(item.getIconUrl());
             name.setText(item.getAppName());
-
+            name.setTextColor(mItemColor);
             itemView.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -119,6 +120,11 @@ public class RecommendView extends LinearLayout {
             });
             mContainer.addView(itemView);
         }
+    }
+
+    public void setItemColor(int res) {
+        mItemColor = mContext.getResources().getColor(res);
+
     }
 
     public void hideTitle()  {

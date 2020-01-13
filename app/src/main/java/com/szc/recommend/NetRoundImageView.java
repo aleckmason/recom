@@ -27,7 +27,6 @@ public class NetRoundImageView extends RoundConerImageView {
         public void handleMessage(Message msg) {
             switch (msg.what){
                 case GET_DATA_SUCCESS:
-
                     setImageBitmap(mBitmap);
                     post(new Runnable() {
                         @Override
@@ -104,7 +103,6 @@ public class NetRoundImageView extends RoundConerImageView {
                         handler.sendEmptyMessage(SERVER_ERROR);
                     }
                 } catch (IOException e) {
-
                     e.printStackTrace();
                     //网络连接错误
                     handler.sendEmptyMessage(NETWORK_ERROR);
