@@ -3,8 +3,18 @@
 buildscript {
     
     repositories {
-        google()
+        mavenLocal()
+        mavenCentral()
         jcenter()
+        google()
+
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        maven { url "https://jitpack.io" }
+        jcenter { url "http://jcenter.bintray.com/" }
+        maven { url 'http://repo.jfrog.org/artifactory/gradle-plugins' }
+        maven { url "http://oss.sonatype.org/content/repositories/snapshots" }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/central/' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.0'
