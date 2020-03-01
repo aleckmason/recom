@@ -1,73 +1,67 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\0e542d602ad1e8b1105405280625d0dc\AndroidManifest.xml:2:1-11:12
-INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:3:5-44
-		INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml
-		INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:5:5-18:19
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:5:5-28:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\0e542d602ad1e8b1105405280625d0dc\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\0e542d602ad1e8b1105405280625d0dc\AndroidManifest.xml:9:5-20
-	android:supportsRtl
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:7:9-41
 	android:icon
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:7:9-38
-	android:allowBackup
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:6:9-38
 activity#com.szc.recommend.MainActivity
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:11:9-17:20
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:9:9-14:20
 	android:name
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:11:19-64
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:9:19-64
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:12:13-16:29
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:10:13-13:29
 action#android.intent.action.MAIN
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:13:17-69
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:11:17-69
 	android:name
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:13:25-66
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:11:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:15:17-77
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:12:17-77
 	android:name
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:15:27-74
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:12:27-74
+activity#com.szc.recommend.DetailActivity
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:16:9-17:20
+	android:name
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:16:19-66
+meta-data#channel
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:21:9-27:21
+	android:value
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:23:13-35
+	android:name
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:22:13-35
 uses-permission#android.permission.INTERNET
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:19:5-66
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:29:5-66
 	android:name
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:19:22-64
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:20:5-75
-	android:name
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:20:22-72
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:29:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:21:5-78
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:30:5-78
 	android:name
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:21:22-76
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:30:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:22:5-75
+ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:31:5-75
 	android:name
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:22:22-73
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:23:5-80
-	android:name
-		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:23:22-78
+		ADDED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml:31:22-73
 uses-sdk
 INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from E:\daka\client\recommend2\app\src\main\AndroidManifest.xml

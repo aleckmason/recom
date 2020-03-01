@@ -1,1 +1,1 @@
-[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":1},"path":"AndroidManifest.xml","properties":{"packageId":"com.szc.recommend","split":"","minSdkVersion":"15"}}]
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":1},"path":"AndroidManifest.xml","properties":{"packageId":"recommend.aleck.com.recommend","split":"","minSdkVersion":"15"}}]

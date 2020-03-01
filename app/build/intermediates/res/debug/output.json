@@ -1,1 +1,1 @@
-[{"outputType":{"type":"PROCESSED_RES"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":1},"path":"resources-debug.ap_","properties":{"packageId":"com.szc.recommend","split":"","minSdkVersion":"15"}}]
+[{"outputType":{"type":"PROCESSED_RES"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":1},"path":"resources-debug.ap_","properties":{"packageId":"recommend.aleck.com.recommend","split":"","minSdkVersion":"15"}}]
