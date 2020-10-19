@@ -3,7 +3,6 @@
     package="recommend.aleck.com.recommend">
 
     <application
-        android:icon="@drawable/icon"
         android:label="@string/app_name"
      >
         <activity android:name="com.szc.recommend.MainActivity">
