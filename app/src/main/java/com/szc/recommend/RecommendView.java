@@ -95,14 +95,11 @@ public class RecommendView extends LinearLayout {
             item.setIconUrl(Constants.ROOT_URL + item.getIconUrl());
             item.setDownloadUrl(Constants.ROOT_URL + item.getDownloadUrl());
 
-
-
             if( item.bannerList != null) {
                 for(int j = 0;j < item.bannerList.size();j++) {
                     item.getBannerList().set(j,Constants.ROOT_URL + item.getBannerList().get(j));
                 }
             }
-
 
 
             NetRoundImageView icon = itemView.findViewById(R.id.icon);
